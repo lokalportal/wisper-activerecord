@@ -29,8 +29,8 @@ module Wisper
       end
 
       def after_update_broadcast
-        broadcast(:after_update, self)
-        broadcast("update_#{broadcast_model_name_key}_successful", self)
+        broadcast(:after_update, self, changes: saved_changes)
+        broadcast("update_#{broadcast_model_name_key}_successful", self, changes: saved_changes)
       end
 
       def after_destroy_broadcast
