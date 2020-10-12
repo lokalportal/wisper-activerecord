@@ -6,6 +6,5 @@ gemfile:
   - gemfiles/activerecord_5.gemfile
   - gemfiles/activerecord_6.gemfile
 rvm:
-  - 2.5.0
   - 2.6.0
   - 2.7.0
